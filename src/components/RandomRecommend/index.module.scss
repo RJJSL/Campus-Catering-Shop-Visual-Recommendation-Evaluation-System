@@ -1,0 +1,96 @@
+@use '@/styles/variables.scss' as *;
+
+.randomContainer {
+  padding: $spacing-lg;
+}
+
+.randomButton {
+  background: linear-gradient(135deg, $color-primary 0%, $color-primary-light 100%);
+  border-radius: $radius-lg;
+  padding: $spacing-xl;
+  text-align: center;
+  box-shadow: $shadow-card;
+  transition: all $transition-base;
+
+  &:active {
+    opacity: 0.9;
+    transform: scale(0.98);
+  }
+}
+
+.randomText {
+  font-size: $font-size-xl;
+  font-weight: $font-weight-bold;
+  color: $color-text-white;
+  display: block;
+}
+
+.randomSubtext {
+  font-size: $font-size-sm;
+  color: rgba(255, 255, 255, 0.8);
+  margin-top: $spacing-sm;
+  display: block;
+}
+
+.resultCard {
+  display: flex;
+  background: $color-bg-card;
+  border-radius: $radius-lg;
+  padding: $spacing-md;
+  margin-top: $spacing-lg;
+  box-shadow: $shadow-card;
+  transition: all $transition-base;
+
+  &:active {
+    opacity: 0.9;
+    transform: scale(0.98);
+  }
+}
+
+.resultImage {
+  width: 180rpx;
+  height: 180rpx;
+  border-radius: $radius-md;
+  flex-shrink: 0;
+}
+
+.resultInfo {
+  flex: 1;
+  padding-left: $spacing-md;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.resultName {
+  font-size: $font-size-lg;
+  font-weight: $font-weight-semibold;
+  color: $color-text-primary;
+  @include text-ellipsis;
+}
+
+.resultMeta {
+  display: flex;
+  gap: $spacing-sm;
+  margin-top: $spacing-sm;
+}
+
+.rating {
+  font-size: $font-size-sm;
+  color: $color-rating;
+  font-weight: $font-weight-medium;
+}
+
+.area, .type {
+  font-size: $font-size-xs;
+  color: $color-text-tertiary;
+  background: $color-bg-page;
+  padding: 4rpx 12rpx;
+  border-radius: $radius-xs;
+}
+
+.clickHint {
+  font-size: $font-size-sm;
+  color: $color-primary;
+  margin-top: $spacing-md;
+}

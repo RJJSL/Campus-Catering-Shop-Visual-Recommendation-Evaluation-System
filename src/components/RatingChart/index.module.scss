@@ -1,0 +1,56 @@
+@use '@/styles/variables.scss' as *;
+
+.chartContainer {
+  background: $color-bg-card;
+  border-radius: $radius-lg;
+  padding: $spacing-md;
+  margin-bottom: $spacing-md;
+}
+
+.chartTitle {
+  font-size: $font-size-lg;
+  font-weight: $font-weight-semibold;
+  color: $color-text-primary;
+  display: block;
+  margin-bottom: $spacing-md;
+}
+
+.chartContent {
+  display: flex;
+  flex-direction: column;
+  gap: $spacing-sm;
+}
+
+.ratingRow {
+  display: flex;
+  align-items: center;
+  gap: $spacing-sm;
+}
+
+.ratingLabel {
+  font-size: $font-size-sm;
+  color: $color-text-secondary;
+  width: 60rpx;
+}
+
+.barContainer {
+  flex: 1;
+  height: 24rpx;
+  background: $color-bg-page;
+  border-radius: $radius-xs;
+  overflow: hidden;
+}
+
+.bar {
+  height: 100%;
+  background: linear-gradient(90deg, $color-rating 0%, $color-secondary 100%);
+  border-radius: $radius-xs;
+  transition: width $transition-base;
+}
+
+.count {
+  font-size: $font-size-xs;
+  color: $color-text-tertiary;
+  width: 60rpx;
+  text-align: right;
+}

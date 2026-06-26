@@ -1,0 +1,59 @@
+@use '@/styles/variables.scss' as *;
+
+.loginPage {
+  background: linear-gradient(180deg, $color-bg-warm 0%, $color-bg-page 100%);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: $spacing-xl;
+}
+
+.logo {
+  font-size: 80rpx;
+  margin-bottom: $spacing-lg;
+}
+
+.title {
+  font-size: $font-size-xxl;
+  font-weight: $font-weight-bold;
+  color: $color-text-primary;
+  margin-bottom: $spacing-md;
+}
+
+.subtitle {
+  font-size: $font-size-md;
+  color: $color-text-tertiary;
+  margin-bottom: $spacing-xl;
+}
+
+.loginButton {
+  width: 100%;
+  max-width: $max-content-width;
+  background: #07C160;
+  color: $color-text-white;
+  border-radius: $radius-lg;
+  padding: $spacing-md $spacing-lg;
+  text-align: center;
+  cursor: pointer;
+  transition: all $transition-base;
+  box-shadow: $shadow-card;
+
+  &:active {
+    opacity: 0.8;
+    transform: scale(0.98);
+  }
+}
+
+.loginButtonText {
+  font-size: $font-size-lg;
+  font-weight: $font-weight-medium;
+}
+
+.hint {
+  font-size: $font-size-sm;
+  color: $color-text-tertiary;
+  margin-top: $spacing-lg;
+  text-align: center;
+}

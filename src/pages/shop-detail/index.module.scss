@@ -1,0 +1,189 @@
+@use '@/styles/variables.scss' as *;
+
+.shopDetailPage {
+  background: $color-bg-page;
+  min-height: 100vh;
+  padding-bottom: 120rpx;
+}
+
+.loading {
+  text-align: center;
+  padding: $spacing-xl * 2;
+}
+
+.loadingText {
+  font-size: $font-size-md;
+  color: $color-text-tertiary;
+}
+
+.imageSwiper {
+  height: 400rpx;
+}
+
+.shopImage {
+  width: 100%;
+  height: 100%;
+}
+
+.shopInfo {
+  background: $color-bg-card;
+  padding: $spacing-lg;
+  margin-bottom: $spacing-md;
+}
+
+.shopHeader {
+  display: flex;
+  align-items: center;
+  gap: $spacing-sm;
+}
+
+.shopName {
+  font-size: $font-size-xl;
+  font-weight: $font-weight-bold;
+  color: $color-text-primary;
+}
+
+.newTag {
+  font-size: $font-size-xs;
+  color: $color-primary;
+  background: $color-tag-bg;
+  padding: 4rpx 12rpx;
+  border-radius: $radius-xs;
+}
+
+.hotTag {
+  font-size: $font-size-xs;
+  color: $color-error;
+  background: rgba(245, 63, 63, 0.1);
+  padding: 4rpx 12rpx;
+  border-radius: $radius-xs;
+}
+
+.shopMeta {
+  display: flex;
+  align-items: center;
+  gap: $spacing-sm;
+  margin-top: $spacing-sm;
+}
+
+.rating {
+  font-size: $font-size-lg;
+  color: $color-rating;
+  font-weight: $font-weight-medium;
+}
+
+.reviewCount {
+  font-size: $font-size-sm;
+  color: $color-text-tertiary;
+}
+
+.shopTags {
+  display: flex;
+  gap: $spacing-sm;
+  margin-top: $spacing-sm;
+}
+
+.tag {
+  font-size: $font-size-sm;
+  color: $color-text-secondary;
+  background: $color-bg-page;
+  padding: $spacing-xs $spacing-md;
+  border-radius: $radius-xs;
+}
+
+.shopDetails {
+  margin-top: $spacing-md;
+}
+
+.detailText {
+  font-size: $font-size-sm;
+  color: $color-text-secondary;
+  display: block;
+  margin-top: $spacing-xs;
+}
+
+.description {
+  font-size: $font-size-md;
+  color: $color-text-secondary;
+  line-height: $line-height-normal;
+  margin-top: $spacing-md;
+}
+
+.section {
+  padding: $spacing-lg;
+}
+
+.sectionHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: $spacing-md;
+}
+
+.sectionTitle {
+  font-size: $font-size-lg;
+  font-weight: $font-weight-semibold;
+  color: $color-text-primary;
+}
+
+.addReview {
+  font-size: $font-size-sm;
+  color: $color-primary;
+}
+
+.dishScroll {
+  white-space: nowrap;
+  @include scroll-x-container;
+}
+
+.dishItem {
+  display: inline-block;
+  width: 260rpx;
+  margin-right: $spacing-md;
+  white-space: normal;
+}
+
+.emptyReviews {
+  text-align: center;
+  padding: $spacing-xl;
+}
+
+.emptyText {
+  font-size: $font-size-md;
+  color: $color-text-tertiary;
+}
+
+.emptyHint {
+  font-size: $font-size-sm;
+  color: $color-text-disabled;
+  margin-top: $spacing-sm;
+}
+
+.bottomBar {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: $color-bg-card;
+  padding: $spacing-md $spacing-lg;
+  display: flex;
+  gap: $spacing-md;
+  box-shadow: $shadow-card;
+}
+
+.actionButton {
+  flex: 1;
+  background: $color-bg-page;
+  border-radius: $radius-lg;
+  padding: $spacing-sm $spacing-md;
+  text-align: center;
+  transition: all $transition-base;
+
+  &:active {
+    opacity: 0.9;
+  }
+}
+
+.favoriteActive {
+  background: $color-tag-bg;
+}
